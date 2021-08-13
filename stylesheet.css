@@ -1,0 +1,170 @@
+body{
+margin:auto;
+}
+
+.nav-wrapper{
+  background-color:#00b300;
+  padding:5px;
+  width: 100%;
+  position: sticky;
+  top:0;
+  z-index:1;
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.nav-list li{
+  display:inline;
+  margin:0px;
+}
+
+.nav-list li a:hover{
+  background-color:darkorange;
+}
+
+.nav-list li a:active{
+  background-color:chartreuse;
+}
+
+
+.nav-list li a:visited{
+  background-color:darkviolet;
+}
+.form-container{
+  background-color: #232323;
+  width: 330px;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  position: fixed;
+  bottom: -240;
+  right: 0;
+  transition: .5s;
+}
+
+#mail-icon{
+  width: 50px;
+  float: left;
+  background-color:none;
+}
+
+.form-head-container{
+  background-color: #000000;
+  padding: 5px;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+.form-item{
+  margin-left: 15px;
+  color: white;
+  padding-left: 8px;
+}
+
+#subject{
+  height:100px ;
+  width: 200px;
+}
+#contact-us-label{
+  color: white;
+}
+#submit-btn{
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  margin: 9px 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#submit-btn:hover{
+  background-color: darkorange;
+}
+.form-container:hover{
+  bottom: 0px
+}
+#caption-1{
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  color: white;
+  font-size: 3vw;
+  animation-name: caption-fade;
+  animation-duration: 2s;
+}
+@keyframes caption-fade {
+  0%{opacity:0; top:0;}
+  100%{opacity:1; top:40%;}
+}
+.featured-wrapper{
+  position: relative;
+  display: flex;
+  overflow: auto;
+  justify-content: space-around;
+}
+
+.PRODUCT-CONTAINER{
+  background-color: #4caf50;
+  text-align: center;
+  max-width: 20%;
+  position: relative;
+  border-radius: 20PX;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 8px;
+  animation-name: PRODUCT-CONTAINER-ANIMATION;
+  animation-duration: 2S;
+  border-color: #4caf50;
+
+}
+
+@keyframes PRODUCT-CONTAINER-ANIMATION {
+
+  0%{opacity:0; margin-top: 500px;}
+  100%{opacity: 1; margin-top: 8px;}
+}
+.PRODUCT-CONTAINER img{
+  width: 270px;
+  position: relative;
+  top: 16px;
+  height: 200px;
+}
+
+.cat-text{
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  margin-top: 10%;
+  margin-bottom: -2%
+}
+.button-container{
+  background-color: white;
+  position: relative;
+  top: 1;
+  padding: 7%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.view-more-btn{
+  background-color:#4caf50;
+  max-width: 100%;
+  border: none;
+  color: white;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 9px 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.view-more-btn:hover{
+  background-color: darkorange;
+}
